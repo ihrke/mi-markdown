@@ -2,6 +2,12 @@
 
 (see [raw version](https://raw.github.com/ihrke/mi-markdown/master/README.md))
 
+## Files ##
+* markd.py - executable to turn markdown into HTML
+* mdx_pygments.py - python-markdown extension for syntax-highlighting a'la github
+                 
+## Features ##
+
 * github-style fenced code with syntax highlighting:
 
     \`\`\`python
