@@ -1,7 +1,12 @@
-# Running Markdown #
+# My way of running Markdown #
 
-* fenced code and
-* Syntax highlighting
+* github-style fenced code with syntax highlighting:
+    \`\`\`python
+    def func(a):
+       print a
+    \`\`\`
+   
+becomes
 
 ```python
 def func(a):

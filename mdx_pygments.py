@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
 """
+    This is based on code from the pygments team (external/mardown-processor.py).
+    It didn't work for me with a recent version of pygments, that's why
+    I modified it.
+    Code segments are highlighted by
+    ```python
+    def func(a):
+        print a
+    ```
+    for compatibility with github.
+
     The Pygments Markdown Preprocessor
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -8,16 +18,8 @@
 
         from markdown import Markdown
 
-        md = Markdown()
-        md.textPreprocessors.insert(0, CodeBlockPreprocessor())
+        md = Markdown(extensions=['pygments'])
         html = md.convert(someText)
-
-    markdown is then a callable that can be passed to the context of
-    a template and used in that template, for example.
-
-    This uses CSS classes by default, so use
-    ``pygmentize -S <some style> -f html > pygments.css``
-    to create a stylesheet to be added to the website.
 
     .. _Markdown: http://www.freewisdom.org/projects/python-markdown/
 
