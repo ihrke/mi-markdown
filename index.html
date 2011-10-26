@@ -1,1 +1,62 @@
-hello world
+<HTML>
+ <link rel="stylesheet" type="text/css"  href="thiashome.css">
+<body>
+
+<div id="globalwrapper">
+<div id="content">
+
+<h1>My way of running Markdown</h1>
+<p>(see <a href="https://raw.github.com/ihrke/mi-markdown/master/README.md">raw version</a>)</p>
+<h2>Files</h2>
+<ul>
+<li><a href="markd.py">markd.py</a> - executable to turn markdown into HTML</li>
+<li>
+<p>from the docstring:</p>
+<blockquote>
+<p>Convert markdown to HTML with some cool features.</p>
+<p>Options:</p>
+<ul>
+<li>-c <cssfile> - use the following CSS file</li>
+<li>-h <header>  - use the following header.html</li>
+<li>-f <footer>  - use the following footer</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>Example:</p>
+<p><code>python mdown.py -h header_ex.html -f footer_ex.html README.md &gt; README.html</code></p>
+</li>
+<li>
+<p><a href="mdx_pygments.py">mdx_pygments.py</a> - python-markdown extension for syntax-highlighting a'la github</p>
+</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>github-style fenced code with syntax highlighting</li>
+</ul>
+<div class="code"><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">func</span>(a):<br />   <span style="color: #008000; font-weight: bold">print</span> a<br /></pre></div><br /></div>
+
+<ul>
+<li>works with all code types supported by pygments, e.g.</li>
+</ul>
+<div class="code"><div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span style="color: #B00040">void</span> main(<span style="color: #B00040">int</span> argc, <span style="color: #B00040">char</span> <span style="color: #666666">**</span>argv){<br />    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">-1</span>;<br />}<br /></pre></div><br /></div>
+
+<ul>
+<li>I will unscrupulously add whatever feature I like.</li>
+</ul>
+<h2>Notes</h2>
+<p>Uses:</p>
+<ul>
+<li><a href="http://www.freewisdom.org/projects/python-markdown/">Python Markdown</a></li>
+<li><a href="http://pygments.org/">Pygments</a></li>
+</ul>
+
+</div></div>
+
+<div id="footer">
+Matthias Ihrke &lt;ihrke@nld.ds.mpg.de&gt;
+</div>
+
+</body>
+</html>
+
