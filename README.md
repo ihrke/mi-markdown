@@ -4,6 +4,21 @@
 
 ## Files ##
 * [markd.py](markd.py) - executable to turn markdown into HTML
+  + from the docstring:
+
+     > Convert markdown to HTML with some cool features.
+     >
+     > Options:
+     >
+     > * -c <cssfile> - use the following CSS file
+     > * -h <header>  - use the following header.html
+     > * -f <footer>  - use the following footer
+
+* Example:
+    
+      ``python mdown.py -h header_ex.html -f footer_ex.html README.md > README.html``
+
+
 * [mdx_pygments.py](mdx_pygments.py) - python-markdown extension for syntax-highlighting a'la github
                  
 ## Features ##
