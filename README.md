@@ -9,11 +9,13 @@
 ## Features ##
 
 * github-style fenced code with syntax highlighting
+
 ```python
 def func(a):
    print a
 ```
 * works with all code types supported by pygments, e.g.
+
 ```c
 void main(int argc, char **argv){
     return -1;
